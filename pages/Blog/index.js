@@ -7,7 +7,7 @@ export default function index({posts}) {
   return (
     <div>
     {posts.map((e)=>(
-     <Link href={`/Blog/${e.slug}`}>
+     <Link href={`/Blog/${e.slug}`} key={e.slug}>
       <div>
         {e.slug}
         </div>
